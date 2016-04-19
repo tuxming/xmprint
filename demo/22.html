@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0165)http://211.152.33.72:8089/views/print/print.html?1=1&y=2016&m=3&d=7&p=/views/report/XHTJ-d.html&rname=%E6%B6%88%E8%80%97%E7%BB%9F%E8%AE%A1%E6%97%A5%E6%8A%A5%E8%A1%A8 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>消耗统计日报表</title>
+    <style type="text/css">
+        body {
+            font-family: "微软雅黑", "simsun", "宋体", "Arial Unicode MS", "Arial Narrow", HELVETICA !important;
+        }
+
+        table {
+            background-color: transparent;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        pre {
+            text-align: left;
+            font-family: "微软雅黑", "simsun", "宋体", "Arial Unicode MS", "Arial Narrow", HELVETICA !important;
+            white-space: normal;
+            margin: 0;
+            padding: 5px 5px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 11pt;
+        }
+
+        table td {
+            padding: 4px 0px;
+            border: 1px solid #000000;
+        }
+
+        table tbody tr td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        table th {
+            padding: 4px 0px;
+            border: 1px solid #000000;
+        }
+
+        table thead tr th {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        button {
+            display: none;
+        }
+
+        .page {
+            width: 690px;
+            font-size: 9pt;
+            margin: 0 auto;
+            word-wrap: break-word;
+        }
+
+        .author-info span {
+            float: left;
+            min-width: 200px;
+            display: inline-block;
+        }
+
+        .author-info span:last-child {
+            float: right;
+        }
+
+        .hide {
+            display: none !important;
+        }
+
+        .center {
+            text-align: center !important;
+        }
+
+        .page-header {
+            margin-bottom: 30px;
+        }
+
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    </style>
+    <script src="res/jquery.js"></script>
+    <script src="xmprint.js"></script>
+</head>
+
+<body class="page" id="print-area">
+    <h1 class="center">
+        <span style="font-weight: bold;"><span id="date">2016年3月7日</span><span id="x_h_title">消耗统计日报表</span></span>
+    </h1>
+    <div class="row col-xs-12 col-sm-12"></div>
+
+    <div class="row  col-xs-12 col-sm-12">
+        <div style="float: right; font-weight: bold;" id="x_preview"></div>
+    </div>
+    <div class="row col-xs-12 col-sm-12" id="common_div"><div><div><h5 style="font-weight: bold;margin-bottom: 0;"></h5><div><table class="table print-table"><thead><tr><th>产品名称</th><th>品种规格</th><th>配比值</th><th>实际值</th><th>误差值</th><th>误差百分比</th><th>排名</th></tr></thead><tbody><tr><td>外加剂</td><td>缓凝剂</td><td>14792.00</td><td>14792.00</td><td>0.00</td><td>0.00</td><td>2</td></tr><tr><td>水</td><td>清水</td><td>3985.00</td><td>3990.00</td><td>-5.00</td><td>-0.13</td><td>7</td></tr><tr><td>水泥</td><td>P·O42.5</td><td>17480.00</td><td>17505.00</td><td>-25.00</td><td>-0.14</td><td>9</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>砂</td><td>粗砂</td><td>13712.00</td><td>13728.00</td><td>-16.00</td><td>-0.12</td><td>6</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>碎石</td><td>5~10</td><td>68575.00</td><td>68624.00</td><td>-49.00</td><td>-0.07</td><td>4</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>外加剂</td><td>缓凝剂</td><td>14792.00</td><td>14792.00</td><td>0.00</td><td>0.00</td><td>2</td></tr><tr><td>外加剂</td><td>缓凝剂</td><td>14792.00</td><td>14792.00</td><td>0.00</td><td>0.00</td><td>2</td></tr><tr><td>外加剂</td><td>缓凝剂</td><td>14792.00</td><td>14792.00</td><td>0.00</td><td>0.00</td><td>2</td></tr><tr><td>外加剂</td><td>缓凝剂</td><td>14792.00</td><td>14792.00</td><td>0.00</td><td>0.00</td><td>2</td></tr><tr><td>外加剂</td><td>缓凝剂</td><td>14792.00</td><td>14792.00</td><td>0.00</td><td>0.00</td><td>2</td></tr><tr><td>外加剂</td><td>缓凝剂</td><td>14792.00</td><td>14792.00</td><td>0.00</td><td>0.00</td><td>2</td></tr><tr><td>外加剂</td><td>缓凝剂</td><td>14792.00</td><td>14792.00</td><td>0.00</td><td>0.00</td><td>2</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>矿粉</td><td>S95</td><td>11200.00</td><td>11216.00</td><td>-16.00</td><td>-0.14</td><td>8</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>砂</td><td>细砂</td><td>53044.00</td><td>53064.00</td><td>-20.00</td><td>-0.04</td><td>3</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>碎石</td><td>5~16</td><td>18904.00</td><td>18920.00</td><td>-16.00</td><td>-0.08</td><td>5</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr><tr><td>粉煤灰</td><td>低钙II级</td><td>6720.00</td><td>6720.00</td><td>0.00</td><td>0.00</td><td>1</td></tr></tbody></table></div></div><div><h5 style="font-weight: bold;margin-bottom: 0;"></h5><div><table class="table"><thead><tr><th>操作员</th><th>产品名称</th><th>品种规格</th><th>手动耗料值</th><th>排名</th></tr></thead><tbody><tr><td colspan="5">暂无内容</td></tr></tbody></table></div></div></div></div>
+
+<script>
+    ;
+    (function () {
+        /**
+         * 通过报表名称判断报表type类型并返回报表日期类型参数
+         * @rname 报表名称
+         * */
+        var getParamsByReportName = function (rName) {
+            var tempData = {};
+
+            if (rName.endsWith("日报表")) {
+                tempData.type = 4;
+            } else if (rName.endsWith("月报表")) {
+                tempData.type = 0;
+            } else if (rName.endsWith("年报表")) {
+                tempData.type = 3;
+            } else {
+                tempData.type = 0;
+            }
+
+            var year = com_getQueryValueInURL(location, "y") ||  now.format("yyyy");
+            var month = com_getQueryValueInURL(location, "m") || now.format("MM");
+            var day = com_getQueryValueInURL(location, "d") ||   now.format("dd");
+
+            tempData.reportName = rName;
+            tempData.year = year;
+            tempData.month = month;
+            tempData.day = day;
+
+            return tempData;
+        };
+
+        /**
+         * 初始化表格列表
+         * @param data
+         */
+        var initTable = function (data) {
+            var preprocessData = function (data) {
+                return data;
+            };
+
+            var appendTableToTarget = function (target, tableContent) {
+                var tableHeads = tableContent["head"];
+                var tableData = tableContent["tableData"];
+                var tableOther = tableContent["other"];
+
+                var tempDiv = $("<div></div>").appendTo(target);
+                tempDiv.append(
+                        $('<h5 style="font-weight: bold;margin-bottom: 0;"></h5>')
+                                .append(tableOther["FS15"]));
+
+                var tempTableDiv = $("<div></div>").appendTo(tempDiv);
+                tab_jsonTable(tempTableDiv, tableData, tableHeads,
+                        function (td, row, col, content) {
+                            return nullToString(content[tableHeads[col]], '--');
+                        }, function (table) {
+                            $(table).addClass("table");
+                        });
+            };
+
+            callSapiServer("/report/statistical_form", function (result) {
+                if (!result.isException) {
+                    var tableList = result.data ? result.data : [];
+
+                    if (tableList && tableList.length > 0)
+                        tableList = preprocessData(tableList);
+
+
+                    var tableDiv = $("<div></div>");
+                    for (var i = 0; i < tableList.length; i++)
+                        appendTableToTarget(tableDiv, tableList[i]);
+                    $("#common_div").html(tableDiv);
+
+                    showTitle(data);
+                    $("#x_preview").html(tableList.length > 0 ? tableList[0]["summation"] : "");
+                }
+            }, "POST", data, false);
+        };
+
+        var showTitle = function (data) {
+            if (4 == data.type) {
+                $("#date").html(data.year + "年" + data.month + "月" + data.day + "日");
+            } else if(0 == data.type) {
+                $("#date").text(data.year + "年" + data.month + "月");
+            }else{
+                $("#date").text(data.year + "年");
+            }
+        };
+
+        var queryParams = getParamsByReportName(
+                decodeURI(com_getQueryValueInURL(location, "rname")));
+        $("#x_h_title").html(queryParams.reportName);
+        $("title").html(queryParams.reportName);
+        initTable(queryParams);
+
+        print();
+    })();
+</script>
+
+
+
+</body></html>

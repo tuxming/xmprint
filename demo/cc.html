@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0210)http://localhost:4510/views/print/print_control.html?rn=%E7%A7%9F%E8%B5%81%E7%BB%93%E7%AE%97&id=10&cn=%E5%A4%AA%E4%BB%93%E5%B8%82%E9%BE%99%E5%92%8C%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>打印</title>
+    <link rel="stylesheet" href="cc/bootstrap.css">
+ 
+    <style type="text/css">
+        body {
+            font-family: "微软雅黑", "simsun", "宋体", "Arial Unicode MS", "Arial Narrow", HELVETICA !important;
+        }
+
+        .page {
+            width: 690px;
+            font-size: 9pt;
+            margin: 0 auto;
+            word-wrap: break-word;
+        }
+
+        .row {
+            margin-bottom: 5px;
+        }
+
+        .page-header {
+            border-bottom: 1px solid black;
+        }
+
+        .disableInput {
+            border: 1px solid white;
+        }
+    </style>
+
+	<script src="res/jquery.js"></script>
+    <script src="xmprint.js"></script>
+</head>
+<body>
+<div class="page" id="print-area">
+    <div class="text-center"><h3 id="companyName">太仓市龙和混凝土有限公司</h3></div>
+    <h4 class="page-header" style="font-weight: bold;">商品混凝土结算单</h4>
+
+    <form class="form-inline">
+        <div class="row">
+            <div class="form-group col-xs-4 col-md-4">
+                <label>结算日期</label>
+                <input type="text" class="form-control input-sm" data-id="FRq" style="width: 100%; box-shadow: none;">
+            </div>
+
+            <div class="form-group  col-xs-4 col-md-4">
+                <label>结算编号</label>
+                <input type="text" class="form-control input-sm" data-id="FNo" style="width: 100%; box-shadow: none;">
+            </div>
+
+            <div class="form-group  col-xs-4 col-md-4">
+                <label>合同编号</label>
+                <input type="text" class="form-control input-sm" data-id="FHtno" style="width: 100%; box-shadow: none;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-xs-8 col-md-8">
+                <label>收货单位</label>
+                <input type="text" class="form-control input-sm" data-id="FHtdw" style="width: 100%; box-shadow: none;">
+            </div>
+
+            <div class="form-group  col-xs-4 col-md-4">
+                <label>单位编号</label>
+                <input type="text" class="form-control input-sm" data-id="FKhno" style="width: 100%; box-shadow: none;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-xs-4 col-md-4">
+                <label>数量</label>
+                <input type="text" class="form-control" style="font-weight: bold; width: 100%; box-shadow: none;" data-id="FTsl">
+            </div>
+
+            <div class="form-group  col-xs-4 col-md-4">
+                <label>金额</label>
+                <input type="text" class="form-control" style="font-weight: bold; width: 100%; box-shadow: none;" data-id="FTJe">
+            </div>
+
+            <div class="form-group  col-xs-4 col-md-4">
+                <label>应付日期</label>
+                <input type="text" class="form-control input-sm" data-id="FYfrq" style="width: 100%; box-shadow: none;">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-xs-6 col-md-6">
+                <div style="border:1px dotted #ccc;padding:10px;">
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label>收货单位(盖章): </label>
+                            <input type="text" class="form-control input-sm disableInput" data-id="FHtdw" style="width: 100%; box-shadow: none;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label>确认人</label>
+                            <input type="text" class="form-control input-sm disableInput" data-id="FQrr" style="width: 100%; box-shadow: none;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label>确认日期</label>
+                            <input type="text" class="form-control input-sm disableInput" data-id="FQrrq" style="width: 100%; box-shadow: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-md-6">
+                <div style="border:1px dotted #ccc;padding:10px;">
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label>供货单位(盖章)</label>
+                            <input type="text" class="form-control input-sm disableInput" style="width: 100%; box-shadow: none;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label>经办人</label>
+                            <input type="text" class="form-control input-sm disableInput" data-id="FJbr" style="width: 100%; box-shadow: none;">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label>&nbsp;</label>
+                            <input type="text" class="form-control input-sm disableInput" style="width: 100%; box-shadow: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <h4 class="page-header" style="font-weight: bold;">结算明细信息</h4>
+    <div id="table_area" style="font-size: 13px;"><div><table class="table table-condensed"><thead><tr><th>供货日期</th><th>规格型号</th><th>单价</th><th>数量</th><th>金额</th><th>任务单号</th></tr></thead><tbody><tr><td colspan="6">暂无内容</td></tr></tbody></table></div></div>
+</div>
+<script>
+
+    (function () {
+        "use strict";
+        $("input").css({
+            "width": "100%",
+            "-webkit-box-shadow": "none",
+            "box-shadow": "none"
+        });
+
+        $("#companyName").html(decodeURI(com_getQueryValueInURL(location, "cn")) || "");//公司名称
+
+        //布局基本元素列表
+        var params = {
+            majorTableName: "tzljsd",//主表内容
+            majorTablePK: "FID",//主表主键
+            recordName: decodeURI(com_getQueryValueInURL(location, "rn")),//记录名称
+            recordId: (parseInt(com_getQueryValueInURL(location, "id")) || 0)//记录id
+        };
+        callSapiServer("/report/get_record_print_data", function (result) {
+            if (!result.isException) {
+                var majorData = result.data.major[0];
+                //主表字段域赋值
+                if (majorData) {
+                    $("form:first input").each(function () {
+                        var dataId = $(this).data("id");
+                        if (dataId && majorData[dataId]) {
+                            $(this).val(majorData[dataId]);
+                        }
+                    });
+                }
+
+                var tableData = result.data.tables;
+                if (tableData) {
+                    for (var i in tableData) {
+                        var tableObj = tableData[i];
+                        var tableList = tableObj["tableList"];
+                        var tableAllHeads = tableObj["heads"];
+
+                        var tableHeads = [];
+                        for (var i in tableAllHeads) {
+                            var key = tableAllHeads[i];
+                            if (!key.startWith("_")) {
+                                tableHeads[tableHeads.length] = key;
+                            }
+                        }
+
+                        var tempDiv = $('<div></div>').appendTo($("#table_area"));
+                        tab_jsonTable(tempDiv, tableList, tableHeads,
+                                function (td, row, col, content) {
+                                    return nullToString(content[tableHeads[col]], '--');
+                                }, function (table) {
+                                    $(table).addClass("table table-condensed");
+
+                                    /* var numberColumIndexList = tableOther["FS18"];
+                                     if (numberColumIndexList) {
+                                     $.each(numberColumIndexList.split(","), function (i, e) {
+                                     $("#" + id).find("tbody tr").each(function () {
+                                     $(this).find("td:eq(" + e + ")").css("text-align", "right");
+                                     });
+                                     });
+                                     }*/
+                                });
+                    }
+                }
+            }
+        }, "POST", params, false);
+
+        /*print();*/
+    })();
+</script></body></html>
